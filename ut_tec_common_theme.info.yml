@@ -1,0 +1,30 @@
+
+name: Utexas TEC Common Theme
+core: 8.x
+core_version_requirement: ^8 || ^9
+type: theme
+base theme: forty_acres
+description: Common theme with styling for several TEC sites
+screenshot: images/screenshot.png
+
+regions:
+  hidden: Hidden
+  header_primary: Header Primary
+  header_secondary: Header Secondary
+  header_tertiary: Header Tertiary
+  site_announcement: Site Announcement
+  primary_menu: Primary Menu
+  breadcrumb: Breadcrumb
+  highlighted: Highlighted
+  help: Help
+  content: Content
+  sidebar_first: Left Sidebar
+  sidebar_second: Right Sidebar
+  footer_left: Left Footer
+  footer_middle: Middle Footer
+  footer_right: Right Footer
+  page_top: Page top
+  page_bottom: Page bottom
+
+libraries:
+  - ut_tec_common_theme/global
