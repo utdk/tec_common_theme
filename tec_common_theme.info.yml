@@ -4,7 +4,7 @@ core: 8.x
 core_version_requirement: ^8 || ^9
 type: theme
 base theme: forty_acres
-description: Common theme with styling for several TEC sites
+description: Common theme with styling for multiple TEC sites
 screenshot: images/screenshot.png
 
 regions:
