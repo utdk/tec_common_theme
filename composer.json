@@ -1,0 +1,8 @@
+{
+  "name": "tec/tec_common_theme",
+  "description": "Custom theme for the Texas Extended Campus portfolio sites",
+  "type": "drupal-custom-theme",
+  "license": [
+    "GPL-2.0-or-later"
+  ]
+}
