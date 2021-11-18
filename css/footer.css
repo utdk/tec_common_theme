@@ -1,0 +1,262 @@
+/* Styling for TEC footers. */
+/* footer.ut-footer {
+  border-top: 0;
+  background-color: #333f48;
+  padding-top: 46px;
+}
+.region-footer-left {
+  color: #fff;
+}
+#block-tcc-site-branding-footer {
+  width: 95%;
+  max-width: 310px;
+  margin-bottom: 32px;
+}
+footer.ut-footer .ut-copy p {
+  font-size: 0.8125rem;
+  line-height: 1.25rem;
+  font-weight: 200;
+  margin-bottom: 10px;
+ } */
+/* Footer Styling. */
+.footer-theme2 {
+  border-top: 0;
+  background-color: #333f48;
+  padding-top: 46px;
+  font-weight: 500;
+}
+.footer-theme2 .footer-contact {
+  border: 0;
+  padding-left: 0;
+  margin-top: 0;
+}
+.footer-theme2 .footer-link-button a {
+  background: #fff;
+  padding: 6px 18px;
+  color: #bf5700;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: .8em;
+}
+.footer-theme2 .footer-link-button a::after {
+  content: '\203a';
+  margin-left: 4px;
+  font-size: 1.4rem;
+  line-height: 16px;
+  padding: 5px 0 0;
+  font-weight: normal;
+  margin-bottom: 5px;
+  display: inline-block;
+  vertical-align: bottom;
+}
+.footer-theme2 .footer-contact p {
+  color: #fff;
+  font-size: .8rem;
+}
+.footer-theme2 .footer-secondary {
+  text-transform: none;
+  border: 0;
+}
+.footer-theme2 .footer-secondary p {
+  color: #fff;
+  font-size: .8rem;
+  line-height: 1.25rem;
+ }
+.footer-theme2 .footer-secondary a {
+  font-size: .75rem;
+  line-height: 1.25rem;
+  font-weight: 200;
+  color: #fff;
+  font-weight: bold;
+}
+.footer-theme2 .footer-tertiary p {
+  color: #fff;
+ }
+.footer-theme2 .footer-tertiary ul.helpful-links {
+  margin: 0;
+}
+.footer-theme2 .footer-tertiary .helpful-link-item {
+  line-height: 1.25rem;
+  width: 100%;
+}
+.footer-theme2 .footer-tertiary a {
+  color: #fff;
+  line-height: 1rem;
+  font-size: .8rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 7px 0;
+  border: 0;
+}
+.footer-theme2 .footer-tertiary a:hover,
+.footer-theme2 .footer-tertiary a:focus {
+  text-decoration: underline;
+  color: #fff;
+  background-color: transparent;
+  font-weight: 700;
+}
+.footer-theme2 .footer-tertiary ul.subnav {
+   margin-top: 0;
+ }
+
+/* Footer Flexbox. */
+/* Mobile styles. */
+@media screen and (min-width: 250px) {
+  .container-footer.footer-theme2 .row {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-items: stretch;
+  }
+  .container-footer.footer-theme2 .row  .footer-flex-1,
+  .container-footer.footer-theme2 .row  .footer-flex-2,
+  .container-footer.footer-theme2 .row  .footer-flex-3 {
+    flex: 1 0 100%;
+  }
+  .footer-flex-divider {
+    display: none;
+  }
+  .footer-theme2 .footer-primary,
+  .footer-theme2 .footer-secondary,
+  .footer-theme2 .footer-tertiary {
+    padding: 0;
+  }
+  /* Remove border-bottom under social links. */
+  .footer-theme2 .connect {
+    border-bottom: 0;
+    padding-bottom: 18px;
+    margin-bottom: 18px;
+  }
+  .footer-bottom-spacer {
+    height: 1.5rem;
+    background-color: #333f48;
+  }
+}
+
+/* Tablet (large mobile) styles. */
+@media screen and (min-width: 700px) and (max-width: 960px) {
+  .container-footer.footer-theme2 .row  .footer-flex-1,
+  .container-footer.footer-theme2 .row  .footer-flex-2 {
+    flex: 1 0 49%;
+  }
+  .container-footer.footer-theme2 .row  .footer-flex-2 {
+    border-left: 1px solid #ccc;
+    padding-left: 2rem;
+  }
+  .container-footer.footer-theme2 .row  .footer-flex-3 {
+    flex: 1 0 100%;
+    margin-top: 4rem;
+  }
+  .footer-theme2 .connect {
+    padding-top: 2em;
+  }
+}
+
+/* Tablet and desktop styles. */
+@media screen and (min-width: 961px) {
+  .container-footer.footer-theme2 .row {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+  }
+  .container-footer.footer-theme2 .row  .footer-flex-1,
+  .container-footer.footer-theme2 .row  .footer-flex-2,
+  .container-footer.footer-theme2 .row  .footer-flex-3 {
+    flex: 0 0 31%;
+  }
+  .footer-theme2 .footer-primary {
+    padding-right: 2rem;
+  }
+  .footer-theme2 .footer-secondary {
+    padding: 0 2rem;
+  }
+  .footer-flex-divider {
+    display: block;
+    width: 1px;
+    background: #ccc;
+    margin: 0 1.8rem;
+    flex: 0 0 auto;
+  }
+  .footer-theme2 .footer-tertiary {
+    padding-left: 2rem;
+  }
+  .footer-bottom-spacer {
+    height: 2.5rem;
+    background-color: #333f48;
+  }
+  .footer-theme2 .connect {
+    padding-top: 2em;
+  }
+}
+ /* Footer logos. */
+.footer-flex-1 .footer-logo {
+  width: 95%;
+  max-width: 310px;
+  margin-bottom: 32px;
+}
+
+/* Social media icons. */
+#block-utexas-social-accounts-social-accounts-block {
+  margin-bottom: 0;
+}
+#block-utexas-social-accounts-social-accounts-block .connect-link span[class^="icon-"]::before {
+  color: #fff;
+  background: #333F48;
+  top: 7px;
+  font-size: 26px;
+  position: relative;
+}
+#block-utexas-social-accounts-social-accounts-block .connect-link span[class^="icon-"]:hover::before {
+  color: #bf5700;
+  background: #fff;
+}
+.footer-theme2 .connect-links > li {
+    height: 32px;
+}
+.footer-theme2 .connect-links > li > * {
+    font-size: 26px;
+    line-height: 26px;
+}
+
+/* Copyright bar. */
+/* Mobile styles. */
+.copyright-bar {
+  background: #bf5700;
+  padding: 15.5px 0;
+}
+.copyright-bar-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0 .46875rem;
+  font-size: .7rem;
+  color: #fff;
+  width: 100%;
+}
+.copyright {
+  flex: 0 0 auto;
+}
+.copyright-bar-links {
+  flex: 0 0 100%;
+}
+.copyright-bar a {
+  color: #fff;
+  padding: 0 .15rem;
+  text-decoration: underline;
+}
+.copyright-bar a:hover {
+  text-decoration: none;
+}
+.copyright-bar a:first-child {
+  padding-left: 0;
+}
+.copyright-bar a:last-child {
+  padding-right: 0;
+}
+@media screen and (min-width: 850px) {
+  .copyright-bar-links {
+      flex: 0 0 auto;
+  }
+}

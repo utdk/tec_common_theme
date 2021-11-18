@@ -1,13 +1,12 @@
 global:
   css:
     theme:
-      css/styles.css: {}
-      # css/header.css: {}
-      # css/footer.css: {}
-      css/overrides.css: {}
+      css/overrides.css: { weight: 300 }
+      css/styles.css: { weight: 400 }
+      css/footer.css: { weight: 500 }
 
   js:
-    js/example.custom.js: {}
+    js/custom.js: {}
   dependencies:
     - core/jquery
     - core/drupal

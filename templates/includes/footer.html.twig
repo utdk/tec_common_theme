@@ -1,0 +1,72 @@
+{# <?php if ($show_date) : ?>
+<div class="container container-updated">
+	<div class="row last_updated">
+		<div class="column small-12">
+			<div class="right caption">
+				<div class="caption-copy"><?php print $show_date; ?></div>
+			</div>
+		</div>
+	</div>
+</div>
+<?php endif; ?> #}
+
+<div class="container-fluid container-footer footer-theme2">
+<div class="container">
+<div class="row">
+<div class="footer-flex-1">
+<div class="footer-primary">
+
+<div class="footer-logo">
+<a href="{{ footer_logo_path }}" class="main-logo">
+
+<span class="hiddenText">Thompson Conference Center</span><img src="{{ footer_logo_path}}" alt="site_logo"></a>
+</div>
+
+
+<div class="footer-contact">
+<p>2405 Robert Dedman Dr.<br>
+Austin, Texas 78712<br>
+Phone: (512) 471-3121<br>
+Fax: (512) 232-1497</p>
+</div>
+
+<div class="connect">
+
+</div>
+</div>
+</div>
+
+<div class="footer-flex-2">
+<div class="footer-secondary">
+{{ footer_contact_info }}
+</div>
+</div>
+
+<div class="footer-flex-divider">&nbsp;</div>
+
+<div class="footer-flex-3">
+<div class="footer-tertiary">
+{{ page.footer_thirdcolumn }}
+
+
+</div>
+</div>
+</div>
+</div>
+<!--end row-->
+</div>
+<!--end footer-theme-2-->
+<div class="footer-bottom-spacer"></div>
+
+
+<div class="copyright-bar container-fluid">
+<div class="container">
+<div class="row">
+<div class="copyright-bar-content">
+<div class="copyright"><span>&copy;</span><a href="https://utexas.edu">The University of Texas at Austin</a>&nbsp; {{ "now"|date('Y') }}</div>
+<div class="copyright-bar-links">{{ copyright_bar_links }}</div>
+</div>
+</div>
+</div>
+</div><!--container-footer-->
+
