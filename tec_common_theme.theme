@@ -12,62 +12,68 @@
 /**
  * Preprocess function for page.
  */
-// function ut_tec_common_theme_preprocess_page(&$variables, $hook) {
-//   // Telephone number variables.
-//   $variables['tel_raw_number'] = '5120000000';
-//   $variables['tel_number'] = '512-000-0000';
-//   // Brandbar logo variables.
-//   $variables['brandbar_link_url'] = 'http://extendedcampus.utexas.edu';
-//   $variables['brandbar_hidden_text'] = '<div class="tec-knockout-logo"><span class="hiddenText">Texas Extended Campus</span></div>';
-//   // Shopping cart variables.
-//   $variables['display_ic_cart'] = FALSE;
-//   $variables['display_uex_cart'] = FALSE;
-//   $variables['cpe_mobile_cart'] = '<div class="row cart-toggle-small"></div>';
-//   $variables['display_cpe_cart'] = FALSE;
-//   // Logo in footer.
-//   $variables['footer_logo_path'] = 'web/themes/custom/ut_tec_common_theme/images/KO_Informal_Extended_Campus.png';
-//   // Footer contact info.
-//   $variables['footer_contact_info'] = '<p>Phone: 512-000-0000<br>Fax: 512-111-1111<br><a href="mailto:person@utexas.edu">Email Us</a></p>';
-//   // Footer extra text.
-//   $variables['footer_extra_text'] = '';
-//     // Footer link button.
-//   $variables['footer_link_button'] = FALSE;
-//   // Copyright bar.
-//   $variables['copyright'] = '<a href="https://utexas.edu"/>The University of Texas at Austin</a>';
-//   $variables['copyright_bar_links'] = '<a href="https://emergency.utexas.edu/"/>Emergency Information</a>' . '|' . '<a href="https://www.utexas.edu/site-policies"/>Site Policies</a>' . '|' . '<a href="https://it.utexas.edu/policies/web-accessibility"/>Web Accessibility Policy</a>' . '|' . '<a href="https://it.utexas.edu/policies/web-privacy"/>Web Privacy Policy</a>';
+function tec_common_theme_preprocess_page(&$variables, $hook) {
+// kint($variables);
+  // Telephone number variables.
+  $variables['tel_raw_number'] = '5120000000';
+  $variables['tel_number'] = '512-000-0000';
+  // Brandbar logo variables.
+  $variables['brandbar_link_url'] = 'http://extendedcampus.utexas.edu';
+  $variables['brandbar_hidden_text'] = t('<div class="tec-knockout-logo"><span class="hiddenText">Texas Extended Campus</span></div>');
+  // Shopping cart variables.
+  $variables['display_ic_cart'] = FALSE;
+  $variables['display_uex_cart'] = FALSE;
+  $variables['cpe_mobile_cart'] = t('<div class="row cart-toggle-small"></div>');
+  $variables['display_cpe_cart'] = FALSE;
+  // Logo in footer.
+  $variables['footer_logo_path'] = 'web/themes/custom/tec_common_theme/images/KO_Informal_Extended_Campus.png';
+  // Footer contact info.
+  $variables['footer_contact_info'] = t('<p>Phone: 512-000-0000<br>Fax: 512-111-1111<br><a href="mailto:person@utexas.edu">Email Us</a></p>');
+  // Footer extra text.
+  $variables['footer_extra_text'] = '';
+    // Footer link button.
+  $variables['footer_link_button'] = FALSE;
+  // Copyright bar.
+  $variables['copyright'] = t('<a href="https://utexas.edu"/>The University of Texas at Austin</a>');
+  $variables['copyright_bar_links'] = t('<a href="https://emergency.utexas.edu/"/>Emergency Information</a>' . '|' . '<a href="https://www.utexas.edu/site-policies"/>Site Policies</a>' . '|' . '<a href="https://it.utexas.edu/policies/web-accessibility"/>Web Accessibility Policy</a>' . '|' . '<a href="https://it.utexas.edu/policies/web-privacy"/>Web Privacy Policy</a>');
 
-//   // Sets partial variables for use on the template.tpl.php pages.
-//   $partials_list = array(
-//     'breadcrumbs' => 'breadcrumbs.tpl.php',
-//     'footer' => 'footer.tpl.php',
-//     'header' => 'header.tpl.php',
-//     'page_top' => 'page-top.tpl.php',
-//     'search_result' => 'search-result.tpl.php',
-//     'search_results' => 'search-results.tpl.php',
-//   );
-//   $theme_inheritance = [
-//     $GLOBALS['theme'],
-//     'ut_tec_common_theme',
-//     'forty_acres',
-//   ];
-//   foreach ($partials_list as $name => $file_name) {
-//     foreach ($theme_inheritance as $theme) {
-//       $partial = drupal_get_path('theme', $theme) . '/templates/partials/' . $file_name;
-//       if (file_exists($partial)) {
-//         $variables['partial_' . $name] = $partial;
-//         break;
-//       }
-//     }
-//   }
-// }
+  // Sets partial variables for use on the template.tpl.php pages.
+  // $partials_list = array(
+  //   'breadcrumbs' => 'breadcrumbs.tpl.php',
+  //   'footer' => 'footer.tpl.php',
+  //   'header' => 'header.tpl.php',
+  //   'page_top' => 'page-top.tpl.php',
+  //   'search_result' => 'search-result.tpl.php',
+  //   'search_results' => 'search-results.tpl.php',
+  // );
+  // $theme_inheritance = [
+  //   $GLOBALS['theme'],
+  //   'tec_common_theme',
+  //   'forty_acres',
+  // ];
+  // foreach ($partials_list as $name => $file_name) {
+  //   foreach ($theme_inheritance as $theme) {
+  //     $partial = drupal_get_path('theme', $theme) . '/templates/partials/' . $file_name;
+  //     if (file_exists($partial)) {
+  //       $variables['partial_' . $name] = $partial;
+  //       break;
+  //     }
+  //   }
+  // }
+}
 
+/**
+ * Preprocess function for region.
+ */
+function tec_common_theme_preprocess_region(&$variables) {
+}
 /**
  * Preprocess function for "Background Accent" fields.
  *
  * @see template_preprocess_utexas_background_accent()
  */
 /*
-function ut_tec_common_theme_preprocess_utexas_background_accent(&$variables) {
+function tec_common_theme_preprocess_utexas_background_accent(&$variables) {
 }
  */
 
@@ -78,7 +84,7 @@ function ut_tec_common_theme_preprocess_utexas_background_accent(&$variables) {
  * @see utexas-featured-highlight.tpl.php
  */
 /*
-function ut_tec_common_theme_preprocess_utexas_featured_highlight(&$variables) {
+function tec_common_theme_preprocess_utexas_featured_highlight(&$variables) {
 }
  */
 
@@ -89,7 +95,7 @@ function ut_tec_common_theme_preprocess_utexas_featured_highlight(&$variables) {
  * @see utexas-flex-content-area.tpl.php
  */
 /*
-function ut_tec_common_theme_preprocess_utexas_flex_content_area(&$variables) {
+function tec_common_theme_preprocess_utexas_flex_content_area(&$variables) {
 }
  */
 
@@ -100,7 +106,7 @@ function ut_tec_common_theme_preprocess_utexas_flex_content_area(&$variables) {
  * @see utexas-hero-photo.tpl.php
  */
 /*
-function ut_tec_common_theme_preprocess_utexas_hero_photo(&$variables) {
+function tec_common_theme_preprocess_utexas_hero_photo(&$variables) {
 }
  */
 
@@ -111,7 +117,7 @@ function ut_tec_common_theme_preprocess_utexas_hero_photo(&$variables) {
  * @see utexas-hero-photo-full.tpl.php
  */
 /*
-function ut_tec_common_theme_preprocess_utexas_hero_photo_full(&$variables) {
+function tec_common_theme_preprocess_utexas_hero_photo_full(&$variables) {
 }
  */
 
@@ -122,7 +128,7 @@ function ut_tec_common_theme_preprocess_utexas_hero_photo_full(&$variables) {
  * @see utexas-image-link.tpl.php
  */
 /*
-function ut_tec_common_theme_preprocess_utexas_image_link(&$variables) {
+function tec_common_theme_preprocess_utexas_image_link(&$variables) {
 }
  */
 
@@ -133,7 +139,7 @@ function ut_tec_common_theme_preprocess_utexas_image_link(&$variables) {
  * @see utexas-photo-content-area.tpl.php
  */
 /*
-function ut_tec_common_theme_preprocess_utexas_photo_content_area(&$variables) {
+function tec_common_theme_preprocess_utexas_photo_content_area(&$variables) {
 }
  */
 
@@ -144,7 +150,7 @@ function ut_tec_common_theme_preprocess_utexas_photo_content_area(&$variables) {
  * @see utexas-promo-unit.tpl.php
  */
 /*
-function ut_tec_common_theme_preprocess_utexas_promo_unit(&$variables) {
+function tec_common_theme_preprocess_utexas_promo_unit(&$variables) {
 }
  */
 
@@ -155,7 +161,7 @@ function ut_tec_common_theme_preprocess_utexas_promo_unit(&$variables) {
  * @see utexas-promo-list.tpl.php
  */
 /*
-function ut_tec_common_theme_preprocess_utexas_promo_list(&$variables) {
+function tec_common_theme_preprocess_utexas_promo_list(&$variables) {
 }
  */
 
@@ -167,7 +173,7 @@ function ut_tec_common_theme_preprocess_utexas_promo_list(&$variables) {
  * @see utexas-quick-links.tpl.php
  */
 /*
-function ut_tec_common_theme_preprocess_utexas_quick_links(&$variables) {
+function tec_common_theme_preprocess_utexas_quick_links(&$variables) {
 }
  */
 
@@ -178,7 +184,7 @@ function ut_tec_common_theme_preprocess_utexas_quick_links(&$variables) {
  * @see utexas-resource.tpl.php
  */
 /*
-function ut_tec_common_theme_preprocess_utexas_resource(&$variables) {
+function tec_common_theme_preprocess_utexas_resource(&$variables) {
 }
  */
 
@@ -189,7 +195,7 @@ function ut_tec_common_theme_preprocess_utexas_resource(&$variables) {
  * @see utexas-social-links.tpl.php
  */
 /*
-function ut_tec_common_theme_preprocess_utexas_social_links(&$variables) {
+function tec_common_theme_preprocess_utexas_social_links(&$variables) {
 }
  */
 
@@ -200,6 +206,6 @@ function ut_tec_common_theme_preprocess_utexas_social_links(&$variables) {
  * @see utexas-social-sharing.tpl.php
  */
 /*
-function ut_tec_common_theme_preprocess_utexas_social_sharing(&$variables) {
+function tec_common_theme_preprocess_utexas_social_sharing(&$variables) {
 }
  */
