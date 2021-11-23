@@ -36,28 +36,6 @@ function tec_common_theme_preprocess_page(&$variables, $hook) {
   // Copyright bar.
   $variables['copyright'] = t('<a href="https://utexas.edu"/>The University of Texas at Austin</a>');
   $variables['copyright_bar_links'] = t('<a href="https://emergency.utexas.edu/"/>Emergency Information</a>' . '|' . '<a href="https://www.utexas.edu/site-policies"/>Site Policies</a>' . '|' . '<a href="https://it.utexas.edu/policies/web-accessibility"/>Web Accessibility Policy</a>' . '|' . '<a href="https://it.utexas.edu/policies/web-privacy"/>Web Privacy Policy</a>');
-  // // Telephone number variables.
-  // $variables['tel_raw_number'] = '5120000000';
-  // $variables['tel_number'] = '512-000-0000';
-  // // Brandbar logo variables.
-  // $variables['brandbar_link_url'] = 'http://extendedcampus.utexas.edu';
-  // $variables['brandbar_hidden_text'] = '<div class="tec-knockout-logo"><span class="hiddenText">Texas Extended Campus</span></div>';
-  // // Shopping cart variables.
-  // $variables['display_ic_cart'] = FALSE;
-  // $variables['display_uex_cart'] = FALSE;
-  // $variables['cpe_mobile_cart'] = '<div class="row cart-toggle-small"></div>';
-  // $variables['display_cpe_cart'] = FALSE;
-  // // Logo in footer.
-  // $variables['footer_logo_path'] = 'web/themes/custom/tec_common_theme/images/KO_Informal_Extended_Campus.png';
-  // // Footer contact info.
-  // $variables['footer_contact_info'] = '<p>Phone: 512-000-0000<br>Fax: 512-111-1111<br><a href="mailto:person@utexas.edu">Email Us</a></p>';
-  // // Footer extra text.
-  // $variables['footer_extra_text'] = '';
-  //   // Footer link button.
-  // $variables['footer_link_button'] = FALSE;
-  // // Copyright bar.
-  // $variables['copyright'] = '<a href="https://utexas.edu"/>The University of Texas at Austin</a>';
-  // $variables['copyright_bar_links'] = '<a href="https://emergency.utexas.edu/"/>Emergency Information</a>' . '|' . '<a href="https://www.utexas.edu/site-policies"/>Site Policies</a>' . '|' . '<a href="https://it.utexas.edu/policies/web-accessibility"/>Web Accessibility Policy</a>' . '|' . '<a href="https://it.utexas.edu/policies/web-privacy"/>Web Privacy Policy</a>';
 
   // Sets partial variables for use on the template.tpl.php pages.
   // $partials_list = array(
@@ -88,28 +66,6 @@ function tec_common_theme_preprocess_page(&$variables, $hook) {
  * Preprocess function for region.
  */
 function tec_common_theme_preprocess_region(&$variables) {
-  // Telephone number variables.
-  // $variables['tel_raw_number'] = '5120000000';
-  // $variables['tel_number'] = '512-000-0000';
-  // // Brandbar logo variables.
-  // $variables['brandbar_link_url'] = 'http://extendedcampus.utexas.edu';
-  // $variables['brandbar_hidden_text'] = '<div class="tec-knockout-logo"><span class="hiddenText">Texas Extended Campus</span></div>';
-  // // Shopping cart variables.
-  // $variables['display_ic_cart'] = FALSE;
-  // $variables['display_uex_cart'] = FALSE;
-  // $variables['cpe_mobile_cart'] = '<div class="row cart-toggle-small"></div>';
-  // $variables['display_cpe_cart'] = FALSE;
-  // // Logo in footer.
-  // $variables['footer_logo_path'] = 'web/themes/custom/tec_common_theme/images/KO_Informal_Extended_Campus.png';
-  // // Footer contact info.
-  // $variables['footer_contact_info'] = '<p>Phone: 512-000-0000<br>Fax: 512-111-1111<br><a href="mailto:person@utexas.edu">Email Us</a></p>';
-  // // Footer extra text.
-  // $variables['footer_extra_text'] = '';
-  //   // Footer link button.
-  // $variables['footer_link_button'] = FALSE;
-  // // Copyright bar.
-  // $variables['copyright'] = '<a href="https://utexas.edu"/>The University of Texas at Austin</a>';
-  // $variables['copyright_bar_links'] = '<a href="https://emergency.utexas.edu/"/>Emergency Information</a>' . '|' . '<a href="https://www.utexas.edu/site-policies"/>Site Policies</a>' . '|' . '<a href="https://it.utexas.edu/policies/web-accessibility"/>Web Accessibility Policy</a>' . '|' . '<a href="https://it.utexas.edu/policies/web-privacy"/>Web Privacy Policy</a>';
 }
 /**
  * Preprocess function for "Background Accent" fields.

@@ -21,12 +21,10 @@ regions:
   sidebar_first: Left Sidebar
   sidebar_second: Right Sidebar
   footer: Footer
-  # footer_left: Left Footer
   footer_firstcolumn: Footer First
   footer_connect: Footer Connect
   footer_secondcolumn: Footer Second
-  # footer_middle: Middle Footer
-  # footer_right: Right Footer
+  footer_thirdcolumn: Footer Third
   page_top: Page top
   page_bottom: Page bottom
 
