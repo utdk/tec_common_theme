@@ -13,7 +13,6 @@
  * Preprocess function for page.
  */
 function tec_common_theme_preprocess_page(&$variables, $hook) {
-// kint($variables);
   // Telephone number variables.
   $variables['tel_raw_number'] = '5120000000';
   $variables['tel_number'] = '512-000-0000';

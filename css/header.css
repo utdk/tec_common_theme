@@ -1,0 +1,121 @@
+
+/* Header styling */
+/* Logo styling. */
+/* Site specific logo. */
+.container-logo-p2 .main_logo {
+  max-width: 90%;
+  height: auto;
+  margin-top: 10px;
+}
+
+/* Mobile brandbar logo. */
+.UT-header .knockout_logo a.logo-link {
+    margin: 4px auto 1px;
+}
+@media screen and (max-width: 375px) {
+  .UT-header .knockout_logo a.logo-link {
+      background-image: url(../images/KO_Informal_Extended_Campus.png);
+      background-repeat: no-repeat;
+      background-position: center 2px;
+      height: 29px;
+      display: block;
+      width: 245px;
+      margin: 12px auto 1px;
+      background-size: 245px 22px;
+  }
+}
+@media screen and (min-width: 376px) {
+  .UT-header .knockout_logo a.logo-link {
+    background-image: url(../images/KO_Informal_Extended_Campus.png);
+    background-repeat: no-repeat;
+    background-position: center 2px;
+    height: 29px;
+    display: block;
+    width: 312px;
+    margin: 10px auto 1px;
+    background-size: 312px 26px;
+  }
+}
+@media screen and (min-width: 501px) {
+  .container-logo-p2 .main_logo {
+    max-width: 410px;
+  }
+}
+
+/* Move brandbar with opening mobile menu. */
+.hide-for-large-up.branded_bar {
+  transition: 0.2s ease-in-out;
+}
+.show-nav .hide-for-large-up.branded_bar {
+    transform: translateX(-16.5625rem);
+    transform: translate3d(-16.5625rem, 0, 0) !important;
+}
+/* Mobile nav program styles. */
+@media screen and (max-width: 64em) {
+  .show-nav .container-topnav #show-parents span.name {
+    font-weight: bold;
+    text-align: left;
+    margin-left: 0px;
+    word-wrap: normal;
+    line-height: 1.5;
+    width: 74%;
+    padding-left: 8px;
+  }
+  .container-topnav .topnav .current-directory .toggle::after {
+    padding-left: 8px;
+  }
+}
+/* Set height of mobile nav items. */
+.container-nav-phase2 .nav-link {
+  padding: 13px 15px;
+}
+/* Phone number. */
+.ph-number.hide-for-large-up {
+  text-align: center;
+  padding: .7em 1em;
+  border-bottom: 1px solid #6a6361;
+}
+.ph-number.hide-for-large-up a {
+  color: #fff;
+  font-family: "LibreFrank", Arial, Helvetica, sans-serif;
+  font-size: 0.8125rem;
+  font-weight: bold;
+}
+/* Set height of search field in mobile menu. */
+@media screen and (max-width: 64em) {
+  .container-topnav .nav-search-container {
+    margin: 1rem 0 8px 0;
+  }
+}
+
+/* Desktop brandbar logo. */
+.container-topnav .topnav.knockout_logo .UT-knockout-logo {
+  background-image: url(../images/KO_Informal_Extended_Campus.png);
+  background-repeat: no-repeat;
+  background-position: 2px 3px;
+  width: 434px;
+  height: 39px;
+  margin-top: 4px;
+  float: none;
+  display: inline-block;
+  background-size: 431px 35px;
+}
+.container-topnav,
+.container-p2-topnav {
+  height: 48px !important;
+}
+.container-topnav .topnav.knockout_logo .UT-knockout-logo a {
+  background: none;
+}
+
+@media screen and (min-width: 1024px) {
+  .container-logo-p2 .main_logo {
+    margin-top: 18px;
+  }
+  .container-topnav .topnav ul.connect-links {
+    top: -5px;
+  }
+  .container-topnav .nav-item-search {
+    margin-top: 38px;
+  }
+}
