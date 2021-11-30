@@ -6,166 +6,46 @@
  */
 #}
 
-<header class="UT-header theme1 <?php print $logo_height; ?>">
-	<div class="hide-for-large-up branded_bar">
-		<div class="container container-p2-topnav">
-			<div class="row">
-				<div class="column small-12">
-					<div class="topnav knockout_logo">
-						<div class="parent-banner-links">
-							<a href="<?php print $brandbar_link_url; ?>" class="logo-link">
-								{{ brandbar_hidden_text }}
-							</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<div class="container container-logo-p2">
+<header class="ut-header {{ logo_height }}" role="banner">
+	<div class="container">
 		<div class="row">
-			<div
-				class="column small-12">
-				{# <?php if ($logo) : ?> #}
-				<div class="p2-logo">
-					<a href="/" class="main-logo">
-						<span class="hiddenText">Site name</span><img class="main_logo" src="" alt="log alt text">
-					</a>
+			<div class="col-12">
+
+				<div class="ut-header-wrapper">
+					{{ page.header_primary }}
+					<button role="button" class="ut-btn--toggle" aria-haspopup="true" aria-controls="ut-main_menu-wrapper" aria-expanded="false" id="js-nav-toggle" href="#ut-main_menu-wrapper">MENU</button>
 				</div>
-				{# <?php endif; ?> #}
-			</div>
-		</div>
-		<a href="#" class="UT-nav-hamburger icon-menu" id="menu-icon">
-			<span class="hiddenText">Menu</span>
-		</a>
-	</div>
-	<!-- container-logo -->
 
-	<!-- Cart for IC smaller screens. -->
-	{# <?php if ($display_ic_cart) : ?> #}
-		<div class="cart mobile right"> <h1>cart code</h1>
-		{# <?php require 'ic-cart-script.tpl.php'; ?> #}
-	</div>
-	{# <?php endif; ?> #}
-
-	<!-- Cart for UEX smaller screens. -->
-	{# <?php if ($display_uex_cart) : ?> #}
-		<div class="cart mobile right"> <h1>More cart code</h1>
-
-		{# <?php require 'uex-cart-script.tpl.php'; ?> #}
-	</div>
-	{# <?php endif; ?> #}
-
-	<!-- Place CPE cart on smaller screens-->
-	{# <?php if ($cpe_mobile_cart) : ?> #}
-	{# <?php print($cpe_mobile_cart); ?> #}
-	{# <?php endif; ?> #}<div class="nav-overlay" id="nav-overlay"> </div>
-	<div class="nav-wrapper" role="navigation">
-
-		<div class="container container-topnav">
-			<div class="row">
-				<div class="column small-12">
-					<div class="topnav knockout_logo">
-						<div class="parent-banner-links">
-							<div class="UT-knockout-logo">
-								<a href="https://utexas.edu" class="logo-link">{{ brandbar_hidden_text }}</a>
-							</div>
-							{# <?php if ($parent_entity) : ?> #}
-							<h2 class="UT-parent-link">
-								<h1>parent entity</h1>
-							</h2>
-							{# <?php endif; ?> #}
-						</div>
-						<div class="hide-for-large-up">
-							<div class="parent-links" id="parents">
-								<a href="http://www.utexas.edu">The University of Texas at Austin</a>
-								{# <?php if ($parent_entity) :
-								                  print $parent_entity;
-								                endif; ?> #}
-							</div>
-							{# <?php if ($site_name) : ?> #}
-							<a href="https:sitename.com" class="current-directory" id="show-parents">
-								<span class="name">
-									<h1>
-										site name</h1>></span>
-								<span class="toggle"></span>
+				<div id="ut-main_menu-wrapper">
+					<div class="header-flex-wrapper">
+						{{ page.header_secondary }}
+						<div class="ph-number">
+							<a href="tel:{{ tel_number }}">
+								<span class="ph-number">{{ tel_number }}</span>
 							</a>
-							{# <?php else : ?> #}
-							<a href="/base-path" class="current-directory" id="show-parents">
-								<span class="name">Home</span>
-								<span class="toggle"></span>
-							</a>
-							{# <?php endif; ?> #}
 						</div>
-						<div class="nav-item-search show-for-large-up">{# <?php if ($display_header_menu == 'header_menu') :
-							                print render($page['menus']['header']);
-							              endif; ?> #}
 
-							{# <?php if ($display_header_menu == 'social_accounts' && module_exists('utexas_social_accounts')) :
-							                $block = block_load('utexas_social_accounts', 'social_accounts_block');
-							                $render_array = _block_get_renderable_array(_block_render_blocks(array($block)));
-							                $output = $render_array['utexas_social_accounts_social_accounts_block']["content"]["#markup"];
-							                print $output;
-							              endif; ?> #}
+						{{ page.header_tertiary }}
+						<div
+							class="shopping-cart">
+							{# Shopping cart. #}
+							{% if display_ic_cart %}
+								<p>do something.</p>
+							{% endif %}
 
-							{# <?php if (isset($header_desktop_search_cse) && ($display_search == TRUE)) :
-							                print render($header_desktop_search_cse);
-							              endif; ?> #}
+							{% if display_uex_cart %}
+								<p>do something.</p>
+							{% endif %}
+
+							{% if display_cpe_cart %}
+								<div class="row cart-toggle-small"></div>')
+							{% endif %}
 						</div>
-						<div class="ph-number hide-for-large-up">
-							<a href="tel:<?php print $tel_raw_number; ?>">
-								<span class="ph-number">
-									<h1>Phone number</h1>
-								</a>
-							</span>
-						</div>
-						<ul class="topnav-links hide-for-large-up">
-							<li
-								class="nav-item nav-item-search">{# <?php if (isset($header_mobile_search_cse) && ($display_search == TRUE)) :
-									                  print render($header_mobile_search_cse);
-									                endif; ?> #}
-							</li>
-						</ul>
 					</div>
+					{{ page.primary_menu }}
 				</div>
 			</div>
 		</div>
-		<!-- container-topnav -->
-		<div class="container container-nav container-nav-phase2">
-			<div class="row">
-
-				<!-- Cart for IC desktop. -->
-				{# <?php if ($display_ic_cart) : ?> #}<div
-					class="cart"> {# <?php require 'ic-cart-script.tpl.php'; ?> #}
-				</div>
-				{# <?php endif; ?> #}
-
-				<!-- Cart for UEX on desktop. -->
-				{# <?php if ($display_uex_cart) : ?> #}<div
-					class="cart"> {# <?php require 'uex-cart-script.tpl.php'; ?> #}
-				</div>
-				{# <?php endif; ?> #}
-
-				<!-- Place the CPE cart on desktop-->
-				{# <?php if ($display_cpe_cart) : ?> #}<div
-					class="cart-toggle-large"> {# <?php require 'cpe-cart-script.tpl.php'; ?> #}
-				</div>
-				{# <?php endif; ?> #}
-
-				<div class="column small-12">
-					<nav>
-						{# <?php print render($page['menus']['core_main']); ?> #}
-					</nav>
-				</div>
-			</div>
-		</div>
-		<!-- container-nav-phase2 -->
 	</div>
-	<!-- nav-wrapper -->
 </header>
-<!-- /header -->
-<!-- alert -->
-{# <?php if (module_exists('utexas_announcement') && file_exists($partial_announcement) && $display_announcement == TRUE) :
-  require_once $partial_announcement;
-endif; ?> #}
+{{ page.site_announcement }}

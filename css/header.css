@@ -1,5 +1,26 @@
 
-/* Header styling */
+/* Brandbar styling */
+.ut-brandbar .row {
+  align-items: center;
+}
+.ut-brandbar .ut-logo--wrapper {
+  text-align: center;
+  height: auto;
+  margin: 8px 0;
+  padding-top: 0;
+}
+.ut-brandbar .ut-logo--wrapper img {
+  max-height: 25px;
+}
+@media screen and (min-width: 1200px) {
+  .ut-brandbar .ut-logo--wrapper {
+    text-align: right;
+  }
+  .ut-brandbar .ut-logo--wrapper img {
+    max-height: 35px;
+  }
+}
+
 /* Logo styling. */
 /* Site specific logo. */
 .container-logo-p2 .main_logo {
@@ -70,17 +91,22 @@
   padding: 13px 15px;
 }
 /* Phone number. */
-.ph-number.hide-for-large-up {
-  text-align: center;
+.ph-number {
+  text-align: right;
   padding: .7em 1em;
-  border-bottom: 1px solid #6a6361;
 }
-.ph-number.hide-for-large-up a {
-  color: #fff;
+.ph-number a {
+  color: #333;
   font-family: "LibreFrank", Arial, Helvetica, sans-serif;
-  font-size: 0.8125rem;
+  font-size: 1rem;
   font-weight: bold;
 }
+@media screen and (min-width: 1200px) {
+  .ph-number {
+    display: none;
+  }
+}
+
 /* Set height of search field in mobile menu. */
 @media screen and (max-width: 64em) {
   .container-topnav .nav-search-container {
