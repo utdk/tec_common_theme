@@ -1,9 +1,15 @@
-/* Styling for TEC footers. */
+/* Footer Styling. */
 .footer-theme2 {
   border-top: 0;
   background-color: #333f48;
   padding-top: 46px;
-  font-weight: 500;
+}
+.footer-theme2 .container {
+  padding-left: 0;
+  padding-right: 0;
+}
+nav#block-footermenu {
+  margin-bottom: 0;
 }
 .footer-theme2 .footer-contact {
   border: 0;
@@ -31,15 +37,17 @@
 }
 .footer-theme2 .footer-contact p {
   color: #fff;
-  font-size: .8rem;
+  font-size: .75rem;
+  font-weight: 600;
 }
 .footer-theme2 .footer-secondary {
   text-transform: none;
   border: 0;
+  font-weight: bold;
 }
 .footer-theme2 .footer-secondary p {
   color: #fff;
-  font-size: .8rem;
+  font-size: .75rem;
   line-height: 1.25rem;
  }
 .footer-theme2 .footer-secondary a {
@@ -59,25 +67,32 @@
   line-height: 1.25rem;
   width: 100%;
 }
-.footer-theme2 .footer-tertiary a {
+.footer-theme2 .footer-tertiary ul.subnav {
+  margin: 0;
+  list-style-type: none;
+  padding: 0;
+  overflow: hidden;
+}
+.footer-theme2 .footer-tertiary ul.subnav li {
+  line-height: 1.25rem;
+  width: 100%;
+  padding: 0;
+}
+.footer-theme2 .footer-tertiary ul.subnav li a {
   color: #fff;
   line-height: 1rem;
   font-size: .8rem;
   text-transform: uppercase;
   font-weight: bold;
-  padding: 7px 0;
   border: 0;
+  padding: .5rem 0;
 }
-.footer-theme2 .footer-tertiary a:hover,
-.footer-theme2 .footer-tertiary a:focus {
+
+.footer-theme2 .footer-tertiary ul.subnav li a:hover,
+.footer-theme2 .footer-tertiary ul.subnav li a:focus {
+  background: transparent;
   text-decoration: underline;
-  color: #fff;
-  background-color: transparent;
-  font-weight: 700;
 }
-.footer-theme2 .footer-tertiary ul.subnav {
-   margin-top: 0;
- }
 
 /* Footer Flexbox. */
 /* Mobile styles. */
@@ -87,6 +102,8 @@
     justify-content: flex-start;
     flex-wrap: wrap;
     align-items: stretch;
+    margin-left: 0;
+    margin-right: 0;
   }
   .container-footer.footer-theme2 .row  .footer-flex-1,
   .container-footer.footer-theme2 .row  .footer-flex-2,
@@ -112,6 +129,56 @@
     background-color: #333f48;
   }
 }
+/* Copyright bar. */
+/* Mobile styles. */
+@media screen and (max-width: 500px) {
+  .copyright-bar .copyright-bar-content .copyright {
+    padding-bottom: 1rem;
+  }
+  .copyright-bar .copyright-bar-content .copyright span:first-child {
+    width: 100%;
+    display: block;
+  }
+  .copyright-bar .copyright-bar-content .copyright span.footer-powered-pipe {
+    display: none;
+  }
+}
+.copyright-bar {
+  background: #bf5700;
+  padding: 15px 0;
+}
+.copyright-bar-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0 .46875rem;
+  font-size: .7rem;
+  color: #fff;
+  width: 100%;
+}
+.footer-powered-pipe {
+  padding: 0 .5rem;
+}
+.copyright {
+  flex: 0 0 auto;
+}
+.copyright-bar-links {
+  flex: 0 0 100%;
+}
+.copyright-bar a {
+  color: #fff;
+  padding: 0 .15rem;
+  text-decoration: underline;
+}
+.copyright-bar a:hover {
+  text-decoration: none;
+}
+.copyright-bar a:first-child {
+  padding-left: 0;
+}
+.copyright-bar a:last-child {
+  padding-right: 0;
+}
 
 /* Tablet (large mobile) styles. */
 @media screen and (min-width: 700px) and (max-width: 960px) {
@@ -129,6 +196,11 @@
   }
   .footer-theme2 .connect {
     padding-top: 2em;
+  }
+}
+@media screen and (min-width: 850px) {
+  .copyright-bar-links {
+      flex: 0 0 auto;
   }
 }
 
@@ -198,45 +270,4 @@
 .footer-theme2 .connect-links > li > * {
     font-size: 26px;
     line-height: 26px;
-}
-
-/* Copyright bar. */
-/* Mobile styles. */
-.copyright-bar {
-  background: #bf5700;
-  padding: 15.5px 0;
-}
-.copyright-bar-content {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  padding: 0 .46875rem;
-  font-size: .7rem;
-  color: #fff;
-  width: 100%;
-}
-.copyright {
-  flex: 0 0 auto;
-}
-.copyright-bar-links {
-  flex: 0 0 100%;
-}
-.copyright-bar a {
-  color: #fff;
-  padding: 0 .15rem;
-  text-decoration: underline;
-}
-.copyright-bar a:hover {
-  text-decoration: none;
-}
-.copyright-bar a:first-child {
-  padding-left: 0;
-}
-.copyright-bar a:last-child {
-  padding-right: 0;
-}
-@media screen and (min-width: 850px) {
-  .copyright-bar-links {
-      flex: 0 0 auto;
-  }
 }
