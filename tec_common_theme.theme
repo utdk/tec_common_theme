@@ -2,209 +2,22 @@
 
 /**
  * @file
- * Main template file for subtheme of forty_acres theme.
- *
- * If you are using the "Page Builder" module, the preprocess functions below
- * may be uncommented and logic added to them to override the default logic
- * provided by the functions listed at @see.
+ * The primary PHP file for a Forty Acres subtheme.
  */
 
-/**
- * Preprocess function for page.
- */
 function tec_common_theme_preprocess_page(&$variables, $hook) {
-  // Telephone number variables.
-  $variables['tel_raw_number'] = '5120000000';
-  $variables['tel_number'] = '512-000-0000';
   // Brandbar logo variables.
   $variables['brandbar_link_url'] = 'http://extendedcampus.utexas.edu';
   $variables['brandbar_hidden_text'] = t('<div class="tec-knockout-logo"><span class="hiddenText">Texas Extended Campus</span></div>');
-  // Shopping cart variables.
-  $variables['display_ic_cart'] = FALSE;
-  $variables['display_uex_cart'] = FALSE;
-  $variables['cpe_mobile_cart'] = t('<div class="row cart-toggle-small"></div>');
-  $variables['display_cpe_cart'] = FALSE;
   // Logo in footer.
-  $variables['footer_logo_path'] = 'web/themes/custom/tec_common_theme/images/KO_Informal_Extended_Campus.png';
+  $variables['footer_logo_path'] = '/themes/custom/tec_common_theme/images/KO_Informal_Extended_Campus.png';
   // Footer contact info.
   $variables['footer_contact_info'] = t('<p>Phone: 512-000-0000<br>Fax: 512-111-1111<br><a href="mailto:person@utexas.edu">Email Us</a></p>');
   // Footer extra text.
-  $variables['footer_extra_text'] = '';
+  $variables['footer_extra_text'] = t('<p>Text such as address<br>can go here</p>');
     // Footer link button.
   $variables['footer_link_button'] = FALSE;
   // Copyright bar.
   $variables['copyright'] = t('<a href="https://utexas.edu"/>The University of Texas at Austin</a>');
   $variables['copyright_bar_links'] = t('<a href="https://emergency.utexas.edu/"/>Emergency Information</a>' . '|' . '<a href="https://www.utexas.edu/site-policies"/>Site Policies</a>' . '|' . '<a href="https://it.utexas.edu/policies/web-accessibility"/>Web Accessibility Policy</a>' . '|' . '<a href="https://it.utexas.edu/policies/web-privacy"/>Web Privacy Policy</a>');
-
-  // Sets partial variables for use on the template.tpl.php pages.
-  // $partials_list = array(
-  //   'breadcrumbs' => 'breadcrumbs.tpl.php',
-  //   'footer' => 'footer.tpl.php',
-  //   'header' => 'header.tpl.php',
-  //   'page_top' => 'page-top.tpl.php',
-  //   'search_result' => 'search-result.tpl.php',
-  //   'search_results' => 'search-results.tpl.php',
-  // );
-  // $theme_inheritance = [
-  //   $GLOBALS['theme'],
-  //   'tec_common_theme',
-  //   'forty_acres',
-  // ];
-  // foreach ($partials_list as $name => $file_name) {
-  //   foreach ($theme_inheritance as $theme) {
-  //     $partial = drupal_get_path('theme', $theme) . '/templates/partials/' . $file_name;
-  //     if (file_exists($partial)) {
-  //       $variables['partial_' . $name] = $partial;
-  //       break;
-  //     }
-  //   }
-  // }
 }
-
-/**
- * Preprocess function for region.
- */
-function tec_common_theme_preprocess_region(&$variables) {
-}
-/**
- * Preprocess function for "Background Accent" fields.
- *
- * @see template_preprocess_utexas_background_accent()
- */
-/*
-function tec_common_theme_preprocess_utexas_background_accent(&$variables) {
-}
- */
-
-/**
- * Preprocess function for "Featured Highlight" fields.
- *
- * @see template_preprocess_utexas_featured_highlight()
- * @see utexas-featured-highlight.tpl.php
- */
-/*
-function tec_common_theme_preprocess_utexas_featured_highlight(&$variables) {
-}
- */
-
-/**
- * Theme preprocess function for flex content areas to create variables.
- *
- * @see template_preprocess_utexas_flex_content_area()
- * @see utexas-flex-content-area.tpl.php
- */
-/*
-function tec_common_theme_preprocess_utexas_flex_content_area(&$variables) {
-}
- */
-
-/**
- * Theme preprocess function for *standard* "Hero Photo" fields.
- *
- * @see template_preprocess_utexas_hero_photo()
- * @see utexas-hero-photo.tpl.php
- */
-/*
-function tec_common_theme_preprocess_utexas_hero_photo(&$variables) {
-}
- */
-
-/**
- * Preprocess function for *full* "Hero Photo" fields.
- *
- * @see template_preprocess_utexas_hero_photo_full()
- * @see utexas-hero-photo-full.tpl.php
- */
-/*
-function tec_common_theme_preprocess_utexas_hero_photo_full(&$variables) {
-}
- */
-
-/**
- * Preprocess function for "Image Links" fields.
- *
- * @see template_preprocess_utexas_image_link()
- * @see utexas-image-link.tpl.php
- */
-/*
-function tec_common_theme_preprocess_utexas_image_link(&$variables) {
-}
- */
-
-/**
- * Preprocess function for "Photo Content Area" fields.
- *
- * @see template_preprocess_utexas_photo_content_area()
- * @see utexas-photo-content-area.tpl.php
- */
-/*
-function tec_common_theme_preprocess_utexas_photo_content_area(&$variables) {
-}
- */
-
-/**
- * Preprocess function for "Promo Unit" fields.
- *
- * @see template_preprocess_utexas_promo_unit()
- * @see utexas-promo-unit.tpl.php
- */
-/*
-function tec_common_theme_preprocess_utexas_promo_unit(&$variables) {
-}
- */
-
-/**
- * Preprocess function for "Promo List" fields.
- *
- * @see template_preprocess_utexas_promo_list()
- * @see utexas-promo-list.tpl.php
- */
-/*
-function tec_common_theme_preprocess_utexas_promo_list(&$variables) {
-}
- */
-
-
-/**
- * Preprocess function for "Quick Links" fields.
- *
- * @see template_preprocess_utexas_quick_links()
- * @see utexas-quick-links.tpl.php
- */
-/*
-function tec_common_theme_preprocess_utexas_quick_links(&$variables) {
-}
- */
-
-/**
- * Preprocess function for "Resource" fields.
- *
- * @see template_preprocess_utexas_resource()
- * @see utexas-resource.tpl.php
- */
-/*
-function tec_common_theme_preprocess_utexas_resource(&$variables) {
-}
- */
-
-/**
- * Preprocess function for "Social Links" fields.
- *
- * @see template_preprocess_utexas_social_links()
- * @see utexas-social-links.tpl.php
- */
-/*
-function tec_common_theme_preprocess_utexas_social_links(&$variables) {
-}
- */
-
-/**
- * Preprocess function fo "Social Sharing" content.
- *
- * @see template_preprocess_utexas_social_sharing()
- * @see utexas-social-sharing.tpl.php
- */
-/*
-function tec_common_theme_preprocess_utexas_social_sharing(&$variables) {
-}
- */

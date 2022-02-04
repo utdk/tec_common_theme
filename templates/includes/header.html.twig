@@ -1,51 +1,64 @@
 {#
 /**
- * @file
- * Theme override to display the header.
- *
- */
+* @file
+* Theme override to display the header.
+*
+*/
 #}
 
 <header class="ut-header {{ logo_height }}" role="banner">
-	<div class="container">
-		<div class="row">
-			<div class="col-12">
+  <div class="brandbar"></div>
+  <div class="container-topnav">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
 
-				<div class="ut-header-wrapper">
-					{{ page.header_primary }}
-					<button role="button" class="ut-btn--toggle" aria-haspopup="true" aria-controls="ut-main_menu-wrapper" aria-expanded="false" id="js-nav-toggle" href="#ut-main_menu-wrapper">MENU</button>
-				</div>
+          <div class="ut-header-wrapper">
+            {{ page.header_primary }}
+            <button role="button" class="ut-btn--toggle" aria-haspopup="true" aria-controls="ut-main_menu-wrapper" aria-expanded="false" id="js-nav-toggle" href="#ut-main_menu-wrapper">MENU</button>
+          </div>
 
-				<div id="ut-main_menu-wrapper">
-					<div class="header-flex-wrapper">
-						{{ page.header_secondary }}
-						<div class="ph-number">
-							<a href="tel:{{ tel_number }}">
-								<span class="ph-number">{{ tel_number }}</span>
-							</a>
-						</div>
 
-						{{ page.header_tertiary }}
-						<div
-							class="shopping-cart">
-							{# Shopping cart. #}
-							{% if display_ic_cart %}
-								<p>do something.</p>
-							{% endif %}
 
-							{% if display_uex_cart %}
-								<p>do something.</p>
-							{% endif %}
 
-							{% if display_cpe_cart %}
-								<div class="row cart-toggle-small"></div>')
-							{% endif %}
-						</div>
-					</div>
-					{{ page.primary_menu }}
-				</div>
-			</div>
-		</div>
-	</div>
+          <div id="ut-main_menu-wrapper">
+
+            <div class="header-top">
+              <div class="parent-banner-links">
+                <a href="https://utexas.edu">UTEXAS.EDU</a>
+                {% if parent_entity_link %}
+                  <span class="header-pipe">|</span>
+                  <h2 class="UT-parent-link">
+                    <a href="{{ parent_entity_link }}">{{ parent_entity_title }}</a>
+                  </h2>
+                {% endif %}
+              </div>
+              <div class="header-menu-links">{{ page.header_secondary }}</div>
+            </div>
+
+            <div class="header-flex-wrapper">
+              {{ page.header_tertiary }}
+            <div class="shopping-cart">
+              {# Shopping cart. #}
+              {% if display_ic_cart %}
+                <p>do something.</p>
+              {% endif %}
+
+              {% if display_uex_cart %}
+              <p>do something.</p>
+              {% endif %}
+
+              {% if display_cpe_cart %}
+              <div class="row cart-toggle-small"></div>')
+              {% endif %}
+            </div>
+          </div>
+          {{ page.primary_menu }}
+
+        </div>
+      </div>
+    </div>
+  </div>
 </header>
 {{ page.site_announcement }}
+
