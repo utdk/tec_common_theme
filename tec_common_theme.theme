@@ -10,9 +10,9 @@ function tec_common_theme_preprocess_page(&$variables, $hook) {
   $variables['brandbar_link_url'] = 'http://extendedcampus.utexas.edu';
   $variables['brandbar_hidden_text'] = t('<div class="tec-knockout-logo"><span class="hiddenText">Texas Extended Campus</span></div>');
   // Logo in footer.
-  $variables['footer_logo_path'] = '/themes/utexas-thompson/tcc/images/KO_formal_Thompson_Conf.png';
+  $variables['footer_logo_path'] = '/themes/custom/tec_common_theme/images/KO_Informal_Extended_Campus.png';
   // Footer contact info.
-  $variables['footer_contact_info'] = t('<p>Phone: 512-471-3121<br>Fax: 512-232-1497<br><a href="mailto:tcc@austin.utexas.edu">Email Us</a></p>');
+  $variables['footer_contact_info'] = t('<p>Phone: 512-000-0000<br>Fax: 512-111-1111<br><a href="mailto:person@utexas.edu">Email Us</a></p>');
   // Footer extra text.
   $variables['footer_extra_text'] = t('<p>Text such as address<br>can go here</p>');
     // Footer link button.
