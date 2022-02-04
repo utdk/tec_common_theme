@@ -7,23 +7,60 @@ header.ut-header {
   background: transparent;
 }
 .header-top {
-  display: none;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.header-top .parent-banner-links {
+  flex: 1 1 auto;
+  align-self: center;
+}
+.header-top .parent-banner-links a,
+.header-top .parent-banner-links h2 {
+  display: inline-block;
+  font-size: .85rem;
+  margin-bottom: 0;
+  font-weight: bold;
+}
+.header-top .parent-banner-links h2 a {
+  font-weight: normal;
+  font-size: 1rem;
+  font-family: "CharisSil", Georgia, serif;
+  font-style: italic;
+  color: #1f262b;
+}
+header.ut-header .region-header-secondary {
+  flex-direction: unset;
+}
+.header-top .header-menu-links {
+  flex: 1 1 auto;
+  line-height: 25px;
+}
+.header-top .header-menu-links .region-header-secondary {
+  float: right;
+ }
+header.ut-header .region-header-secondary > nav {
+  margin: 0;
+}
+ul.header-menu__list .header-menu__list-item {
+  margin-bottom: 0;
 }
 header.ut-header #ut-main_menu-wrapper {
   top: 60px;
 }
-#block-tcc-site-branding-header {
+header.ut-header #ut-main_menu-wrapper.active {
+  flex-direction: column;
+}
+.ut-header-wrapper .block-system-branding-block {
   margin-bottom: 0;
 }
 .brandbar {
   height: .5rem !important;
   background: #bf5700;
 }
-/* .container.container-p2-topnav .parent-banner-links {
-  display: none;
-} */
 .container-topnav {
-  height: 61px;
+  height: 60px;
 }
 .header-pipe {
   color: #c6cdd3;
@@ -69,6 +106,30 @@ header.ut-header #ut-main_menu-wrapper {
     width: 312px;
     margin: 10px auto 1px;
     background-size: 312px 26px;
+  }
+}@media screen and (max-width: 475px) {
+  header.ut-header .ut-header-wrapper {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    width: 100%;
+    height: 60px;
+  }
+  header.ut-header .region-header-primary {
+    padding: 0;
+    flex: 1 1 auto;
+  }
+
+  .ut-header .ut-logo--main {
+    max-height: 25px;
+  }
+  .ut-header-wrapper button#js-nav-toggle {
+    flex: 0 1 auto;
+    width: 70px;
+    padding: 6px 12px;
+    font-size: .85rem;
   }
 }
 @media screen and (min-width: 501px) {
@@ -128,19 +189,6 @@ header.ut-header #ut-main_menu-wrapper {
   padding: 13px 15px;
 }
 
-/* Phone number. */
-.ph-number.hide-for-large-up {
-  text-align: center;
-  padding: .7em 1em;
-  border-bottom: 1px solid #6a6361;
-}
-.ph-number.hide-for-large-up a {
-  color: #fff;
-  font-family: "LibreFrank", Arial, Helvetica, sans-serif;
-  font-size: 0.8125rem;
-  font-weight: bold;
-}
-
 /* Set height of search field in mobile menu. */
 @media screen and (max-width: 64em) {
   .container-topnav .nav-search-container {
@@ -167,7 +215,7 @@ header.ut-header #ut-main_menu-wrapper {
   top: 0px;
   position: relative;
 }
-@media screen and (min-width: 64.063em) {
+@media screen and (min-width: 75em) {
   header.ut-header {
     height: 218px;
   }
@@ -184,7 +232,10 @@ header.ut-header #ut-main_menu-wrapper {
   header.ut-header .block-system-branding-block {
     margin-bottom: 0;
     position: absolute;
-    top: 20px;
+    top: 65px;
+  }
+  header.ut-header #ut-main_menu-wrapper.active {
+    flex-direction: row;
   }
   .container-topnav {
     background: #f3f5f6;
@@ -234,8 +285,6 @@ header.ut-header #ut-main_menu-wrapper {
     display: inline-block;
   }
  .header-top {
-    display: flex;
-    justify-content: space-between;
     align-items: center;
     height: 3rem;
   }
@@ -260,18 +309,19 @@ header.ut-header #ut-main_menu-wrapper {
     margin-left: 0;
   }
   header.ut-header .region-header-tertiary .ut-search-form {
-    margin-top: -60px;
+    margin-top: 10px;
   }
   .header-top .header-menu-links .region-header-secondary .block-system-menu-blockheader {
     padding-left: 0;
     float: right;
-    margin-top: 20px;
+    margin-top: 0;
     margin-bottom: 0;
    }
-  header.ut-header .region-header-secondary {
-    /* display: none; */
-   }
   header.ut-header #ut-main_menu-wrapper {
+    top: 0;
+  }
+  .region-primary-menu nav#block-accessible-main-menu {
+    position: relative;
     top: 42px;
   }
   .main-menu__list-item .main-menu__link {
@@ -301,4 +351,6 @@ header.ut-header #ut-main_menu-wrapper {
     margin-top: 18px;
   }
 }
+@media screen and (min-width: 1200px) {
 
+}

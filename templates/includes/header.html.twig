@@ -13,32 +13,30 @@
       <div class="row">
         <div class="col-12">
 
-
           <div class="ut-header-wrapper">
             {{ page.header_primary }}
             <button role="button" class="ut-btn--toggle" aria-haspopup="true" aria-controls="ut-main_menu-wrapper" aria-expanded="false" id="js-nav-toggle" href="#ut-main_menu-wrapper">MENU</button>
           </div>
 
+
+
+
           <div id="ut-main_menu-wrapper">
+
+            <div class="header-top">
+              <div class="parent-banner-links">
+                <a href="https://utexas.edu">UTEXAS.EDU</a>
+                {% if parent_entity_link %}
+                  <span class="header-pipe">|</span>
+                  <h2 class="UT-parent-link">
+                    <a href="{{ parent_entity_link }}">{{ parent_entity_title }}</a>
+                  </h2>
+                {% endif %}
+              </div>
+              <div class="header-menu-links">{{ page.header_secondary }}</div>
+            </div>
+
             <div class="header-flex-wrapper">
-              {# {{ page.header_secondary }} #}
-
-<div class="header-top">
-	<div class="parent-banner-links">
-		<a href="https://utexas.edu">UTEXAS.EDU</a>
-		{% if parent_entity_link %}
-			<span class="header-pipe">|</span>
-			<h2 class="UT-parent-link">
-				<a href="{{ parent_entity_link }}">{{ parent_entity_title }}</a>
-			</h2>
-		{% endif %}
-	</div>
-	<div class="header-menu-links">
-		{{ page.header_secondary }}
-	</div>
-</div>
-
-
               {{ page.header_tertiary }}
             <div class="shopping-cart">
               {# Shopping cart. #}
@@ -56,11 +54,6 @@
             </div>
           </div>
           {{ page.primary_menu }}
-
-
-
-
-
 
         </div>
       </div>
