@@ -40,11 +40,11 @@ header.ut-header .region-header-secondary {
 .header-top .header-menu-links .region-header-secondary {
   float: right;
  }
- .header-flex-wrapper .region-header-tertiary {
-   display: flex;
-   flex-direction: row;
-   flex-wrap: wrap;
- }
+header.ut-header .region-header-tertiary {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
 header.ut-header .region-header-secondary > nav {
   margin: 0;
 }
