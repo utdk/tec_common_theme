@@ -11,30 +11,6 @@
 nav#block-footermenu {
   margin-bottom: 0;
 }
-.footer-theme2 .footer-contact {
-  border: 0;
-  padding-left: 0;
-  margin-top: 0;
-}
-.footer-theme2 .footer-link-button a {
-  background: #fff;
-  padding: 6px 18px;
-  color: #bf5700;
-  border-radius: 8px;
-  font-weight: bold;
-  font-size: .8em;
-}
-.footer-theme2 .footer-link-button a::after {
-  content: '\203a';
-  margin-left: 4px;
-  font-size: 1.4rem;
-  line-height: 16px;
-  padding: 5px 0 0;
-  font-weight: normal;
-  margin-bottom: 5px;
-  display: inline-block;
-  vertical-align: bottom;
-}
 .footer-theme2 .footer-contact p {
   color: #fff;
   font-size: .8125rem;
@@ -51,7 +27,7 @@ nav#block-footermenu {
   line-height: 1.25rem;
  }
 .footer-theme2 .footer-secondary a {
-  font-size: .75rem;
+  font-size: .8125rem;
   line-height: 1.25rem;
   font-weight: 200;
   color: #fff;
@@ -60,13 +36,6 @@ nav#block-footermenu {
 .footer-theme2 .footer-tertiary p {
   color: #fff;
  }
-.footer-theme2 .footer-tertiary ul.helpful-links {
-  margin: 0;
-}
-.footer-theme2 .footer-tertiary .helpful-link-item {
-  line-height: 1.25rem;
-  width: 100%;
-}
 .footer-theme2 .footer-tertiary ul.subnav {
   margin: 0;
   list-style-type: none;
@@ -94,8 +63,7 @@ nav#block-footermenu {
   text-decoration: underline;
 }
 
-/* Footer Flexbox. */
-/* Mobile styles. */
+/* Mobile stacking styles. */
 @media screen and (min-width: 250px) {
   .container-footer.footer-theme2 .row {
     display: flex;
@@ -112,11 +80,6 @@ nav#block-footermenu {
   }
   .footer-flex-divider {
     display: none;
-  }
-  .footer-theme2 .footer-primary,
-  .footer-theme2 .footer-secondary,
-  .footer-theme2 .footer-tertiary {
-    padding: 0;
   }
   /* Remove border-bottom under social links. */
   .footer-theme2 .connect {
@@ -253,27 +216,4 @@ nav#block-footermenu {
   width: 95%;
   max-width: 310px;
   margin-bottom: 32px;
-}
-
-/* Social media icons. */
-#block-utexas-social-accounts-social-accounts-block {
-  margin-bottom: 0;
-}
-#block-utexas-social-accounts-social-accounts-block .connect-link span[class^="icon-"]::before {
-  color: #fff;
-  background: #333F48;
-  top: 7px;
-  font-size: 26px;
-  position: relative;
-}
-#block-utexas-social-accounts-social-accounts-block .connect-link span[class^="icon-"]:hover::before {
-  color: #bf5700;
-  background: #fff;
-}
-.footer-theme2 .connect-links > li {
-    height: 32px;
-}
-.footer-theme2 .connect-links > li > * {
-    font-size: 26px;
-    line-height: 26px;
 }

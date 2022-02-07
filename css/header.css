@@ -3,6 +3,10 @@ header.ut-header {
   padding-top: 0;
   border-bottom: 1px solid #c4cdd4;
 }
+.brandbar {
+  height: .5rem !important;
+  background: #bf5700;
+}
 .container-topnav {
   background: transparent;
 }
@@ -45,14 +49,15 @@ header.ut-header .region-header-tertiary {
   flex-direction: column;
   flex-wrap: wrap;
 }
-header.ut-header .region-header-tertiary [id^="block-sitewidesociallinks"] {
-  margin-bottom: 1rem;
-}
 header.ut-header .region-header-secondary > nav {
   margin: 0;
 }
+header.ut-header .region-header-tertiary [id^="block-sitewidesociallinks"] {
+  margin-bottom: 1rem;
+}
 ul.header-menu__list .header-menu__list-item {
   margin-bottom: 0;
+  display: inline;
 }
 header.ut-header #ut-main_menu-wrapper {
   top: 60px;
@@ -62,10 +67,6 @@ header.ut-header #ut-main_menu-wrapper.active {
 }
 .ut-header-wrapper .block-system-branding-block {
   margin-bottom: 0;
-}
-.brandbar {
-  height: .5rem !important;
-  background: #bf5700;
 }
 .container-topnav {
   height: 60px;
@@ -79,57 +80,15 @@ header.ut-header #ut-main_menu-wrapper.active {
   max-height: 40px;
 }
 
-/* background-color: #f3f5f6; */
-/* Logo styling. */
-/* Site specific logo. */
-.container-logo-p2 .main_logo {
-  max-width: 90%;
-  height: auto;
-  margin-top: 10px;
+header.ut-header .region-header-tertiary [id^="block-sitewidesociallinks"] {
+  margin-bottom: 1rem;
+}
+header.ut-header .region-header-tertiary  .block-search-form-block {
+  margin: 0;
+  border-radius: 20px;
 }
 
-/* Mobile brandbar logo. */
-.UT-header .knockout_logo a.logo-link {
-    margin: 4px auto 1px;
-}
-@media screen and (max-width: 375px) {
-  .UT-header .knockout_logo a.logo-link {
-      background-image: url(../images/KO_Informal_Extended_Campus.png);
-      background-repeat: no-repeat;
-      background-position: center 2px;
-      height: 29px;
-      display: block;
-      width: 245px;
-      margin: 12px auto 1px;
-      background-size: 245px 22px;
-  }
-}
-@media screen and (min-width: 376px) {
-  .UT-header .knockout_logo a.logo-link {
-    background-image: url(../images/KO_Informal_Extended_Campus.png);
-    background-repeat: no-repeat;
-    background-position: center 2px;
-    height: 29px;
-    display: block;
-    width: 312px;
-    margin: 10px auto 1px;
-    background-size: 312px 26px;
-  }
-}@media screen and (max-width: 475px) {
-  header.ut-header .ut-header-wrapper {
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    align-items: center;
-    display: flex;
-    width: 100%;
-    height: 60px;
-  }
-  header.ut-header .region-header-primary {
-    padding: 0;
-    flex: 1 1 auto;
-  }
-
+@media screen and (max-width: 475px) {
   .ut-header .ut-logo--main {
     max-height: 25px;
   }
@@ -140,95 +99,10 @@ header.ut-header #ut-main_menu-wrapper.active {
     font-size: .85rem;
   }
 }
-@media screen and (min-width: 501px) {
-  .container-logo-p2 .main_logo {
-    max-width: 410px;
-  }
-}
 
-/* Main content for mobile and up. */
-@media screen and (min-width: 40.063em) {
-  .UT-header + .UT-page {
-    padding-top: 70px;
-  }
-}
-
-/* Mobile nav program styles. */
-@media screen and (max-width: 64em) {
-
-
-  .header-menu-links .topnav-constituents {
-    list-style-type: none;
-    padding-left: 0;
-    text-align: center;
-  }
-  .header-menu-links .topnav-constituents li a {
-    color: #fff;
-    font-size: .9rem;
-  }
-  .container-topnav .topnav .parent-links {
-    line-height: 20px;
-  }
-  .container-topnav .topnav .hide-for-large-up .parent-links a {
-    background: #f3f5f6;
-    padding: 10px 0;
-    color: #333;
-  }
-  .container-topnav .topnav .hide-for-large-up .parent-links a:hover,
-  .container-topnav .topnav .hide-for-large-up .parent-links a:focus {
-    text-decoration: underline;
-  }
-  .show-nav .container-topnav #show-parents span.name {
-    font-weight: bold;
-    text-align: left;
-    margin-left: 0px;
-    word-wrap: normal;
-    line-height: 1.5;
-    width: 74%;
-    padding-left: 8px;
-  }
-  .container-topnav .topnav .current-directory .toggle::after {
-    padding-left: 8px;
-  }
-}
-
-/* Set height of mobile nav items. */
-.container-nav-phase2 .nav-link {
-  padding: 13px 15px;
-}
-
-/* Set height of search field in mobile menu. */
-@media screen and (max-width: 64em) {
-  .container-topnav .nav-search-container {
-    margin: 1rem 0 8px 0;
-  }
-}
-
-/* Desktop brandbar logo. */
-.container-topnav .topnav.knockout_logo .UT-knockout-logo {
-  background-image: url(../images/KO_Informal_Extended_Campus.png);
-  background-repeat: no-repeat;
-  background-position: 2px 3px;
-  width: 434px;
-  height: 39px;
-  margin-top: 4px;
-  float: none;
-  display: inline-block;
-  background-size: 431px 35px;
-}
-.container-topnav .topnav.knockout_logo .UT-knockout-logo a {
-  background: none;
-}
-.block-system-branding-block {
-  top: 0px;
-  position: relative;
-}
 @media screen and (min-width: 75em) {
   header.ut-header {
     height: 218px;
-  }
-  .UT-header + .UT-page {
-    padding-top: 0;
   }
   .ut-header .ut-logo--main {
     max-width: 410px;
@@ -250,7 +124,9 @@ header.ut-header #ut-main_menu-wrapper.active {
     height: 48px;
   }
   .container-topnav .parent-banner-links {
-      height: 48px;
+      flex: 1 0 auto;
+      width: unset;
+      height: unset;
   }
   .parent-banner-links > a {
     font-weight: bold;
@@ -260,26 +136,9 @@ header.ut-header #ut-main_menu-wrapper.active {
   .container-topnav .topnav .UT-parent-link {
     float: none;
     display: inline-block;
-  }
-  .container-topnav .topnav .parent-banner-links .UT-parent-link a {
-    font-weight: normal;
-    font-size: .85rem;
-    font-family: "CharisSil", Georgia, serif;
-    font-style: italic;
-    color: #7a8286;
-    letter-spacing: .25px;
-    float: none;
-    margin-bottom: 0;
-    line-height: 1;
-    font-size: .9rem;
-    display: inline-block;
-  }
-  .UT-parent-link {
-    float: none;
-    display: inline-block;
     margin-bottom: 1rem;
   }
-  .UT-parent-link a {
+  .container-topnav .topnav .parent-banner-links .UT-parent-link a {
     font-weight: normal;
     font-size: .85rem;
     font-family: "CharisSil", Georgia, serif;
@@ -296,11 +155,6 @@ header.ut-header #ut-main_menu-wrapper.active {
     align-items: center;
     height: 3rem;
   }
- .header-top .parent-banner-links {
-    flex: 1 0 auto;
-    width: unset;
-    height: unset;
-  }
   header.ut-header .region-header-tertiary {
     display: flex;
     flex-direction: row;
@@ -308,13 +162,10 @@ header.ut-header #ut-main_menu-wrapper.active {
     align-items: center;
   }
   header.ut-header .region-header-tertiary [id^="block-sitewidesociallinks"] {
-    margin: 0 1rem 0 0;
+    margin: 0 2rem 0 0;
   }
-  #block-tec-common-theme-search-form {
+  header.ut-header .region-header-tertiary  .block-search-form-block  {
     margin: 0;
-  }
-  .header-top .header-menu-links {
-    flex: 1 0 auto;
   }
   ul.header-menu__list .header-menu__link {
     padding: 0.3125rem;
@@ -328,15 +179,6 @@ header.ut-header #ut-main_menu-wrapper.active {
   ul.header-menu__list .header-menu__list-item + .header-menu__list-item {
     margin-left: 0;
   }
-  header.ut-header .region-header-tertiary .ut-search-form {
-    margin-top: 10px;
-  }
-  .header-top .header-menu-links .region-header-secondary .block-system-menu-blockheader {
-    padding-left: 0;
-    float: right;
-    margin-top: 0;
-    margin-bottom: 0;
-   }
   header.ut-header #ut-main_menu-wrapper {
     top: 0;
   }
@@ -363,12 +205,6 @@ header.ut-header #ut-main_menu-wrapper.active {
   .main-menu__list-item .main-menu__link {
     padding-bottom: 8px;
     background: transparent;
-  }
-  .container-topnav .topnav ul.connect-links {
-    top: -5px;
-  }
-  .container-topnav .nav-item-search {
-    margin-top: 18px;
   }
 }
 
