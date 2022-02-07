@@ -37,7 +37,7 @@ nav#block-footermenu {
 }
 .footer-theme2 .footer-contact p {
   color: #fff;
-  font-size: .75rem;
+  font-size: .8125rem;
   font-weight: 600;
 }
 .footer-theme2 .footer-secondary {
@@ -47,7 +47,7 @@ nav#block-footermenu {
 }
 .footer-theme2 .footer-secondary p {
   color: #fff;
-  font-size: .75rem;
+  font-size: .8125rem;
   line-height: 1.25rem;
  }
 .footer-theme2 .footer-secondary a {
@@ -123,6 +123,12 @@ nav#block-footermenu {
     border-bottom: 0;
     padding-bottom: 18px;
     margin-bottom: 18px;
+  }
+  .footer-theme2 .connect [id^="block-sitewidesociallinks"] {
+    margin-bottom: 0;
+  }
+  .footer-theme2 .connect .block__ut-social-links--items svg {
+    fill: #fff;
   }
   .footer-bottom-spacer {
     height: 1.5rem;
