@@ -11,3 +11,62 @@
   clip: rect(0,0,0,0);
   border: 0;
 }
+
+/* EU Cookie Compliance module styling. */
+.eu-cookie-compliance-popup-open #sliding-popup #popup-text {
+  width: 100%;
+  max-width: 100%;
+}
+
+.eu-cookie-compliance-popup-open #sliding-popup #popup-text h3,
+.eu-cookie-compliance-popup-open #sliding-popup #popup-text p {
+  margin: 1rem;
+  font-size: 1.1rem;
+  font-weight: normal;
+  display: block;
+}
+
+.eu-cookie-compliance-popup-open #sliding-popup #popup-text p a {
+  color: #ffffff;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.eu-cookie-compliance-popup-open #sliding-popup #popup-text p a:hover,
+.eu-cookie-compliance-popup-open #sliding-popup #popup-text p a:focus {
+  text-decoration: none;
+}
+
+.eu-cookie-compliance-popup-open #sliding-popup #popup-text .find-more-button.eu-cookie-compliance-more-button {
+  display: none;
+}
+
+.eu-cookie-compliance-popup-open #sliding-popup #popup-buttons {
+  max-width: 100%;
+  float: none;
+  clear: both;
+  text-align: center;
+}
+
+.eu-cookie-compliance-popup-open #sliding-popup #popup-buttons button,
+.eu-cookie-compliance-popup-open #sliding-popup #popup-buttons button.eu-cookie-compliance-default-button {
+  background: #bf5700;
+  border: #ffffff;
+  border: 2px solid #ffffff;
+  padding: .5rem;
+  margin: 0 1rem;
+  color: #ffffff !important;
+  border-radius: 0;
+  font-family: "LibreFrank", Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  text-shadow: none;
+  box-shadow: none;
+}
+
+.eu-cookie-compliance-popup-open #sliding-popup #popup-buttons button:hover,
+.eu-cookie-compliance-popup-open #sliding-popup #popup-buttons button:focus,
+.eu-cookie-compliance-popup-open #sliding-popup #popup-buttons button.eu-cookie-compliance-default-button:hover,
+.eu-cookie-compliance-popup-open #sliding-popup #popup-buttons button.eu-cookie-compliance-default-button:focus {
+  background-color: #ffffff;
+  color: #bf5700 !important;
+}
