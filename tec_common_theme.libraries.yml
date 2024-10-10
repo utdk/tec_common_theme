@@ -5,9 +5,3 @@ global:
       css/styles.css: { weight: 400 }
       css/footer.css: { weight: 500 }
       css/header.css: { weight: 500 }
-
-  js:
-    js/custom.js: {}
-  dependencies:
-    - core/jquery
-    - core/drupal
