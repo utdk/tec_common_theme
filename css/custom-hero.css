@@ -1,0 +1,65 @@
+.ut-hero.hero--blue-bar {
+  /* position: relative; */
+}
+
+.ut-hero.hero--blue-bar .relative {
+  position: relative;
+  min-height: 600px;
+}
+
+.ut-hero.hero--blue-bar .hero-callout {
+  background-color: #ffffff;
+  margin-right: -10rem;
+  margin-left: 4rem;
+  padding: 3rem;
+}
+
+.ut-hero.hero--blue-bar .hero-img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  right: 0;
+  top: 0;
+  object-position: center;
+}
+
+.hero-gray-block {
+  background-color: #c3ced4;
+  height: 100%;
+  width: 43%;
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  display: flex;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  padding-left: 6rem;
+}
+
+.ut-hero.hero--blue-bar img {
+  min-height: 600px;
+  width: auto;
+  object-fit: cover;
+}
+
+.ut-hero.hero--blue-bar .hero-headline {
+  color: #333f48;
+  font-size: 40px;
+  font-weight: 600;
+  font-family: "GT Sectra", georgia, serif;
+  line-height: 50px;
+  margin-bottom: 26px;
+  padding: 0;
+}
+
+.headline-underline {
+  background-color: #bf5700;
+  width: 80px;
+  height: 3px;
+  margin-bottom: 26px;
+}
+
+.ut-hero.hero--blue-bar .hero-subhead {
+  color: #333f48;
+  margin-bottom: 30px;
+}
