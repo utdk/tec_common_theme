@@ -16,6 +16,7 @@
   height: 100%;
   object-position: center;
   max-width: 100%;
+  min-height: 450px;
 }
 @media screen and (min-width: 1200px) {
   .ut-hero.hero--blue-bar img {
@@ -23,6 +24,7 @@
     position: absolute;
     top: 0;
     right: 0;
+    min-height: unset;
   }
 }
 .hero-gray-block {
