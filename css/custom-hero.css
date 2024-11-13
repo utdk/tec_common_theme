@@ -101,3 +101,52 @@
   background-repeat: no-repeat;
   background-position: right center;
 }
+/* Styles for Hero #5 customization. */
+.background-accent .block.block-bundle-utexas-hero {
+  background-color: transparent;
+  border: none;
+  padding-top: 0;
+  padding-bottom: 0;
+  /* padding-right: 44px; */
+}
+/* @media screen and (max-width: 1199px) {
+  .background-accent .block.block-bundle-utexas-hero {
+    padding-right: 15px;
+  }
+} */
+/* Handle widths of hero #5 so content is constrained. */
+.background-accent .hero--half-n-half .hero-content {
+  width: 100%;
+}
+@media (min-width: 600px) {
+  .background-accent .hero--half-n-half .hero-content {
+    max-width: 840px;
+  }
+}
+@media (max-width: 899px) {
+  .background-accent .hero--half-n-half .hero-content .hero-cta {
+    padding: 1rem 1rem 0 1rem;
+  }
+  .background-accent .hero--half-n-half .hero-content .hero-cta a.ut-btn {
+    margin-bottom: 0;
+  }
+}
+@media (min-width: 900px) {
+  .background-accent .hero--half-n-half .hero-content {
+    max-width: 1000px;
+  }
+}
+@media (min-width: 1200px) {
+  .background-accent .hero--half-n-half .hero-content {
+    max-width: 1140px;
+  }
+}
+@media (min-width: 1600px) {
+  .background-accent .hero--half-n-half .hero-content {
+    max-width: 1500px;
+  }
+}
+
+
+
+
