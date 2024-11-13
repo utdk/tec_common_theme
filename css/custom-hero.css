@@ -12,29 +12,49 @@
 .ut-hero.hero--blue-bar img {
   width: auto;
   object-fit: cover;
-  width: 58%;
+  width: 100%;
   height: 100%;
-  right: 0;
-  top: 0;
-  position: absolute;
   object-position: center;
   max-width: 100%;
 }
+@media screen and (min-width: 1200px) {
+  .ut-hero.hero--blue-bar img {
+    width: 58%;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}
 .hero-gray-block {
   background-color: #c3ced4;
-  height: 100%;
-  width: 43%;
-  padding-top: 6rem;
-  padding-bottom: 6rem;
-  padding-left: 6rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 0;
+  position: relative;
+}
+@media screen and (min-width: 1200px) {
+  .hero-gray-block {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    padding-left: 6rem;
+    width: 43%;
+  }
 }
 .ut-hero.hero--blue-bar .hero-callout {
   background-color: #ffffff;
-  margin-right: -10rem;
-  margin-left: 4rem;
+  margin: -85px auto 0;
   padding: 3rem;
   position: relative;
   z-index: 1;
+  width: calc(100% - 60px);
+}
+@media screen and (min-width: 1200px) {
+  .ut-hero.hero--blue-bar .hero-callout {
+  margin-right: -10rem;
+  margin-left: 4rem;
+  margin-top: 0;
+  width: unset;
+  }
 }
 .ut-hero.hero--blue-bar .hero-headline {
   color: #333f48;
