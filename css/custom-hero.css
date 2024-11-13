@@ -45,10 +45,15 @@
 .ut-hero.hero--blue-bar .hero-callout {
   background-color: #ffffff;
   margin: -85px auto 0;
-  padding: 3rem;
+  padding: 1rem;
   position: relative;
   z-index: 1;
   width: calc(100% - 60px);
+}
+@media screen and (min-width: 900px) {
+  .ut-hero.hero--blue-bar .hero-callout {
+    padding: 3rem;
+  }
 }
 @media screen and (min-width: 1200px) {
   .ut-hero.hero--blue-bar .hero-callout {
@@ -60,16 +65,17 @@
 }
 .ut-hero.hero--blue-bar .hero-headline {
   color: #333f48;
-  font-size: 45px;
+  font-size: 26px;
   font-weight: 600;
   font-family: "GT Sectra", georgia, serif;
-  line-height: 50px;
+  line-height: 1.5;
   margin-bottom: 40px;
   padding: 0;
 }
-@media screen and (min-width: 1200px) and (max-width: 1300px) {
+@media screen and (min-width: 900px) {
   .ut-hero.hero--blue-bar .hero-headline {
-    font-size: 40px;
+    font-size: 45px;
+    line-height: 50px;
   }
 }
 .headline-underline {
@@ -85,6 +91,12 @@
 }
 .ut-hero.hero--blue-bar .hero-cta a {
   text-transform: uppercase;
+  font-size: .75rem;
+}
+@media screen and (min-width: 900px) {
+  .ut-hero.hero--blue-bar .hero-cta a {
+    font-size: 1rem;
+  }
 }
 .ut-hero.hero--blue-bar .hero-cta a::after {
   -webkit-mask-image: none;
