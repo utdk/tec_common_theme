@@ -80,6 +80,7 @@ nav#block-footermenu {
   }
   .footer-flex-divider {
     display: none;
+    padding: 0;
   }
   /* Remove border-bottom under social links. */
   .footer-theme2 .connect {
