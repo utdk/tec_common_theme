@@ -4,5 +4,12 @@
   "type": "drupal-custom-theme",
   "license": [
     "GPL-2.0-or-later"
-  ]
+  ],
+  "extra": {
+    "patches": {
+      "utexas/utdk_profile": {
+        "Modify Hero Style descriptions": "patches/hero_customizations.patch"
+      }
+    }
+  }
 }
