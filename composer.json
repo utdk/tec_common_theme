@@ -8,7 +8,7 @@
   "extra": {
     "patches": {
       "utexas/utdk_profile": {
-        "Modify Hero Style descriptions": "patches/hero_customizations.patch"
+        "Modify Hero Style descriptions": "https://drupalkit.its.utexas.edu/patches/tec_hero_style_customizations.patch"
       }
     }
   }
