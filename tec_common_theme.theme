@@ -9,6 +9,9 @@ function tec_common_theme_preprocess_page(&$variables, $hook) {
   // Brandbar logo variables.
   $variables['brandbar_link_url'] = 'http://extendedcampus.utexas.edu';
   $variables['brandbar_hidden_text'] = t('<div class="tec-knockout-logo"><span class="hiddenText">Texas Extended Campus</span></div>');
+  // Load the site name configuration.
+  $config = \Drupal::config('system.site');
+  $variables['site_name'] = $config->get('name');
   // Logo in footer.
   $variables['footer_logo_path'] = '/themes/custom/tec_common_theme/images/KO_Informal_Extended_Campus.png';
   // Footer contact info.
