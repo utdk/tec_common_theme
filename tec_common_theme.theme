@@ -22,7 +22,7 @@ function tec_common_theme_preprocess_page(&$variables, $hook) {
   $variables['footer_link_button'] = FALSE;
   // Copyright bar.
   $variables['copyright'] = t('<a href="https://utexas.edu"/>The University of Texas at Austin</a>');
-  $variables['copyright_bar_links'] = t('<a href="https://emergency.utexas.edu/"/>Emergency Information</a>' . '|' . '<a href="https://www.utexas.edu/site-policies"/>Site Policies</a>' . '|' . '<a href="https://it.utexas.edu/policies/web-accessibility"/>Web Accessibility Policy</a>' . '|' . '<a href="https://it.utexas.edu/policies/web-privacy"/>Web Privacy Policy</a>');
+  $variables['copyright_bar_links'] = t('<a href="https://emergency.utexas.edu/"/>Emergency Information</a>' . '|' . '<a href="https://www.utexas.edu/site-policies"/>Site Policies</a>' . '|' . '<a href="https://www.utexas.edu/web-accessibility-policy"/>Web Accessibility Policy</a>' . '|' . '<a href="https://www.utexas.edu/web-privacy-policy"/>Web Privacy Policy</a>');
 }
 
 /**
