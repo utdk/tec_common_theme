@@ -19,9 +19,10 @@ regions:
   sidebar_first: Left Sidebar
   content: Content
   sidebar_second: Right Sidebar
-  footer_left: Left Footer
-  footer_middle: Middle Footer
-  footer_right: Right Footer
+  footer_firstcolumn: Footer First
+  footer_connect: Footer Connect
+  footer_secondcolumn: Footer Second
+  footer_thirdcolumn: Footer Third
   page_top: Page top
   page_bottom: Page bottom
 

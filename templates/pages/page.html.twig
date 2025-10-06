@@ -44,8 +44,62 @@
  */
 #}
 
-{% include '@tec_common_theme/includes/header.html.twig' %}
+<header class="ut-header mb-3">
+  <section class="ut-upper-header">
+    <div class="container-xl h-100">
+      <div class="d-flex flex-wrap justify-content-between align-items-center h-100">
+        <div class="ut-upper-header--first">
+          <a class="ut-wordmark" aria-label="Go to utexas.edu" href="https://www.utexas.edu">utexas.edu</a>
+          {% if parent_entity_link %}
+            <span class="ut-parent-entity">
+              <a href="{{ parent_entity_link }}">{{ parent_entity_title }}</a>
+            </span>
+          {% endif %}
+        </div>
+        <div class="ut-upper-header--second d-none d-xl-block">
+          {{ page.utility_nav }}
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <nav class="navbar navbar-nav navbar-expand-xl {{ logo_height }}">
+    <div class="utexas-menu-wrapper container-xl">
+      <div class="d-xl-none py-4 ps-2 mobile-header-primary-wrapper flex-fill">
+        {{ page.header_primary }}
+      </div>
+      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#PrimaryMenuNavbar" aria-controls="PrimaryMenuNavbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-visualisation-closed"></span>
+        <span class="navbar-visualisation-open"></span>
+        <span class="navbar-text navbar-text-closed">Menu</span>
+        <span class="navbar-text navbar-text-open mt-2">Close</span>
+      </button>
+      <div class="collapse navbar-collapse" id="PrimaryMenuNavbar">
+        <div class="utexas-navbar-inner row align-items-center gap-2 flex-grow-1">
+          <div class="utexas-primary-wrapper order-xl-4">
+            {{ page.primary_menu }}
+          </div>
+          <div class="col">
+            <div class="d-none d-xl-block py-4">
+              {{ page.header_primary }}
+            </div>
+          </div>
+          <div class="col-xl-auto">
+            {{ page.header_secondary }}
+          </div>
+          <div class="col-xl-auto d-flex justify-content-center py-2">
+            {{ page.header_tertiary }}
+          </div>
+          <div class="d-xl-none mobile-utility-nav">
+            {{ page.utility_nav }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+
+{{ page.site_announcement }}
 
 {{ page.breadcrumb }}
 
@@ -53,30 +107,38 @@
 
 {{ page.help }}
 
-<div class="container">
-	<div class="row">
-		<div class="col-sm-12">
-			<main role="main">
-				<a id="main-content" tabindex="-1"></a>
-				{# link is in html.html.twig #}
-				<div class="layout-content">
-					{{ page.content }}
-				</div>
-				{# /.layout-content #}
+{% set sidebar_first_width = page.sidebar_first_width is null ? 'col-md-3' : page.sidebar_first_width %}
+{% set sidebar_second_width = page.sidebar_second_width is null ? 'col-md-3' : page.sidebar_second_width %}
 
-				{% if page.sidebar_first %}
-					<aside class="layout-sidebar-first" role="complementary">
-						{{ page.sidebar_first }}
-					</aside>
-				{% endif %}
+{% if page.sidebar_first or page.sidebar_second or not is_layout_builder_page %}
+  <div class="container-xl">
+    <div class="row">
+    {% endif %}
+    {% if page.sidebar_first %}
+      <aside class="layout-sidebar-first {{ sidebar_first_width }}" role="complementary">
+        {{ page.sidebar_first }}
+      </aside>
+    {% endif %}
 
-				{% if page.sidebar_second %}
-					<aside class="layout-sidebar-second" role="complementary">
-						{{ page.sidebar_second }}
-					</aside>
-				{% endif %}
-			</main>
-		</div>
-	</div>
-</div>
+    {% set additional_main_classes = [ '' ] %}
+    {% if page.sidebar_first or page.sidebar_second %}
+      {% if is_layout_builder_page %}
+        {% set additional_main_classes = [ 'px-0' ] %}
+      {% endif %}
+    {% endif %}
+    <main {{ main_content_attributes.addClass(additional_main_classes) }}>
+      <a id="main-content" tabindex="-1"></a>
+      {# link is in html.html.twig #}
+      {{ page.content }}
+    </main>
+
+    {% if page.sidebar_second %}
+      <aside class="layout-sidebar-second {{ sidebar_second_width }}" role="complementary">
+        {{ page.sidebar_second }}
+      </aside>
+    {% endif %}
+    {% if page.sidebar_first or page.sidebar_second or not is_layout_builder_page %}
+    </div>
+  </div>
+{% endif %}
 {% include '@tec_common_theme/includes/footer.html.twig' %}</div>{# /.layout-container #}
