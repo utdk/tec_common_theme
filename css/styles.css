@@ -70,3 +70,9 @@
   background-color: #ffffff;
   color: #bf5700 !important;
 }
+
+/* Make upper header EEV styles. */
+.ut-header .ut-upper-header {
+  background: #f3f5f6;
+  height: 56px;
+}
