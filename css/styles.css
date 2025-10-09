@@ -72,7 +72,18 @@
 }
 
 /* Make upper header EEV styles. */
-.ut-header .ut-upper-header {
+header.ut-header .ut-upper-header {
   background: #f3f5f6;
   height: 56px;
+}
+header.ut-header div.region.region-header-tertiary {
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  #block-tec-common-theme-mishellshoppingcart {
+    flex: 0 100%;
+    #mishell-cart {
+      justify-content: end;
+    }
+  }
 }
