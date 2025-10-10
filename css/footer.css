@@ -78,10 +78,7 @@ nav#block-footermenu {
   .container-footer.footer-theme2 .row  .footer-flex-3 {
     flex: 1 0 100%;
   }
-  .footer-flex-divider {
-    display: none;
-    padding: 0;
-  }
+
   /* Remove border-bottom under social links. */
   .footer-theme2 .connect {
     border-bottom: 0;
@@ -214,4 +211,16 @@ nav#block-footermenu {
 .footer-flex-3 {
   border-left: 1px solid #ccc;
   padding-left: 48px;
+}
+/* Make footer social icons show on dark background. */
+.container-footer {
+  .block-bundle-social-links {
+    h2, h3 {
+      color: #fff;
+      text-align: left;
+    }
+    .block__ut-social-links--link {
+      background: #fff;
+    }
+  }
 }

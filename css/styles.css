@@ -87,7 +87,3 @@ header.ut-header div.region.region-header-tertiary {
     }
   }
 }
-/* Make footer social icons show on dark background. */
-.container-footer .block__ut-social-links--link {
-  background: #fff;
-}
