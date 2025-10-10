@@ -32,11 +32,11 @@
 				<div class="footer-secondary">{{ page.footer_secondcolumn }}</div>
 			</div>
 
-			<div class="footer-flex-divider">&nbsp;</div>
-
+			{% if page.footer_thirdcolumn %}
 			<div class="footer-flex-3">
 				<div class="footer-tertiary">{{ page.footer_thirdcolumn }}</div>
 			</div>
+			{% endif %}
 		</div>
 		<!--end row-->
 	</div>

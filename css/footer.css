@@ -178,7 +178,7 @@ nav#block-footermenu {
 @media screen and (min-width: 961px) {
   .container-footer.footer-theme2 .row {
     display: flex;
-    justify-content: space-between;
+    justify-content: normal;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: stretch;
@@ -193,13 +193,6 @@ nav#block-footermenu {
   }
   .footer-theme2 .footer-secondary {
     padding: 0 2rem;
-  }
-  .footer-flex-divider {
-    display: block;
-    width: 1px;
-    background: #ccc;
-    margin: 0 1.8rem;
-    flex: 0 0 auto;
   }
   .footer-theme2 .footer-tertiary {
     padding-left: 2rem;
@@ -217,4 +210,8 @@ nav#block-footermenu {
   width: 95%;
   max-width: 310px;
   margin-bottom: 32px;
+}
+.footer-flex-3 {
+  border-left: 1px solid #ccc;
+  padding-left: 48px;
 }
