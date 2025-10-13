@@ -87,3 +87,9 @@ header.ut-header div.region.region-header-tertiary {
     }
   }
 }
+/* For social link icons override speedway. */
+.block__ut-social-links--items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 6px;
+}
