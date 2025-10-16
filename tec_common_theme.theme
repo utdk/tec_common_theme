@@ -5,26 +5,6 @@
  * The primary PHP file for a Forty Acres subtheme.
  */
 
-function tec_common_theme_preprocess_page(&$variables, $hook) {
-  // Brandbar logo variables.
-  $variables['brandbar_link_url'] = 'http://extendedcampus.utexas.edu';
-  $variables['brandbar_hidden_text'] = t('<div class="tec-knockout-logo"><span class="hiddenText">Texas Extended Campus</span></div>');
-  // Load the site name configuration.
-  $config = \Drupal::config('system.site');
-  $variables['site_name'] = $config->get('name');
-  // Logo in footer.
-  $variables['footer_logo_path'] = '/themes/custom/tec_common_theme/images/KO_Informal_Extended_Campus.png';
-  // Footer contact info.
-  $variables['footer_contact_info'] = t('<p>Phone: 512-000-0000<br>Fax: 512-111-1111<br><a href="mailto:person@utexas.edu">Email Us</a></p>');
-  // Footer extra text.
-  $variables['footer_extra_text'] = t('<p>Text such as address<br>can go here</p>');
-    // Footer link button.
-  $variables['footer_link_button'] = FALSE;
-  // Copyright bar.
-  $variables['copyright'] = t('<a href="https://utexas.edu"/>The University of Texas at Austin</a>');
-  $variables['copyright_bar_links'] = t('<a href="https://emergency.utexas.edu/"/>Emergency Information</a>' . '|' . '<a href="https://www.utexas.edu/site-policies"/>Site Policies</a>' . '|' . '<a href="https://www.utexas.edu/web-accessibility-policy"/>Web Accessibility Policy</a>' . '|' . '<a href="https://www.utexas.edu/web-privacy-policy"/>Web Privacy Policy</a>');
-}
-
 /**
  * Implements hook_preprocess_field().
  */
