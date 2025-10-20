@@ -1,7 +1,7 @@
 name: Utexas TEC Common Theme
 core_version_requirement: '>=9'
 type: theme
-base theme: forty_acres
+base theme: speedway
 description: Common theme with styling for multiple TEC sites
 screenshot: images/screenshot.png
 
