@@ -99,6 +99,15 @@ nav#block-footermenu {
     background-color: #333f48;
   }
 }
+/* Style footer social links to show up. */
+.footer-theme2 .block-bundle-social-links {
+  h2.ut-headline--xl {
+    color: #fff;
+  }
+  .block__ut-social-links--link {
+    background-color: #fff;
+  }
+}
 /* Copyright bar. */
 /* Mobile styles. */
 @media screen and (max-width: 500px) {
